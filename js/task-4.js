@@ -320,4 +320,135 @@
     // console.log(createFileName("report ", "csv"))
     // console.log(createFileName(" presentation", "xml"))
 
+    // Функція calculateTotal(number) приймає ціле число (параметр number). Доповни код функції так, 
+    // щоб вона повертала суму всіх цілих чисел від одиниці до цього числа включно. Наприклад, 
+    // якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
+
+    // Оголошена функція calculateTotal(number)
+    // Виклик функції calculateTotal(1) повертає 1
+    // Виклик функції calculateTotal(3) повертає 6
+    // Виклик функції calculateTotal(0) повертає 0
+    // Виклик функції calculateTotal(18) повертає 171
+    // Виклик функції calculateTotal(24) повертає 300
+    // Виклик функції calculateTotal() з випадковим числом повертає правильне значення
+
+    // function calculateTotal(number) {
+    //     let total = 0
+    //      let count = 0
+    //      while (count < number) {
+    //         count += 1
+    //         total += count
+    //      }
+    //      return total
+    //    }
+
+    // console.log(calculateTotal(1))   
+    // console.log(calculateTotal(3))
+    // console.log(calculateTotal(0))
+    // console.log(calculateTotal(18))
+    // console.log(calculateTotal(24))
+  
+    // Функція calculateTotal(number) приймає ціле число (параметр number) Використовуючи цикл for, 
+    // доповни код функції так, щоб вона повертала суму всіх цілих чисел від одиниці до цього числа включно. 
+    // Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
+
+    // Оголошена функція calculateTotal(number)
+    // Виклик функції calculateTotal(1) повертає 1
+    // Виклик функції calculateTotal(0) повертає 0
+    // Виклик функції calculateTotal(7) повертає 28
+    // Виклик функції calculateTotal(18) повертає 171
+    // Виклик функції calculateTotal(24) повертає 300
+    // Виклик функції calculateTotal() з випадковим числом повертає правильне значення
+
+    // function calculateTotal(number) {
+    //     let total = 0
+    //     for (let i = 0; i <= number; i += 1) {
+    //         total += i
+    //     }
+    //     return total
+    // }
+
+    // console.log(calculateTotal(1)) 
+    // console.log(calculateTotal(0)) 
+    // console.log(calculateTotal(7)) 
+    // console.log(calculateTotal(18)) 
+    // console.log(calculateTotal(24)) 
     
+
+    // Функція calculateEvenTotal(number) приймає ціле число (параметр number). Доповни код функції так, 
+    // щоб вона повертала суму всіх парних цілих чисел від одиниці до цього числа включно. Парні числа — 
+    // це ті, що можна поділити на 2 без остачі (як це зробити розглядалося у темі Арифметичні операції у модулі 1). 
+    // Наприклад, якщо number дорівнює 6, то сума - це 2 + 4 + 6, тобто 12.
+
+    // Оголошена функція calculateEvenTotal(number)
+    // Виклик функції calculateEvenTotal(1) повертає 0
+    // Виклик функції calculateEvenTotal(3) повертає 2
+    // Виклик функції calculateEvenTotal(7) повертає 12
+    // Виклик функції calculateEvenTotal(18) повертає 90
+    // Виклик функції calculateEvenTotal(27) повертає 182
+    // Виклик функції calculateEvenTotal() з випадковим числом повертає правильне значення
+
+
+    // function calculateEvenTotal(number) {
+    //     let total = 0
+    //     for (let i = 2; i <= number; i += 2) {
+    //         total += i
+    //     }
+    //     return total
+    // }
+
+    // console.log(calculateEvenTotal(1)) 
+    // console.log(calculateEvenTotal(3)) 
+    // console.log(calculateEvenTotal(7)) 
+    // console.log(calculateEvenTotal(18)) 
+    // console.log(calculateEvenTotal(27)) 
+
+    // Доповни код таким чином, щоб у змінну number записувалося перше число у проміжку від start до end, яке ділиться на 5 без остачі.
+
+    // Оголошена змінна start
+    // Оголошена змінна end
+    // Оголошена змінна number
+    // Якщо start це 6, а end це 17, то підсумкове значення змінної number дорівнює 10
+    // Якщо start це 17, а end це 25, то підсумкове значення змінної number дорівнює 20
+    // Якщо start це 2, а end це 11, то підсумкове значення змінної number дорівнює 5
+    // В коді є цикл for, в якому використовується break для можливості виходу з циклу до завершення всіх ітерацій
+
+// const start = 6;
+// const end = 17;
+// let number;
+// for (let i = start; i <= end; i += 1) {
+//     if (i % 5 === 0) {
+//        number = i
+//     }
+   
+// }
+
+// console.log(number)
+
+// Функція findNumber(start, end, divisor) приймає три параметра, які є цілими числами.
+
+// Доповни код функції таким чином, щоб вона:
+
+//     повертала перше число у діапазоні від start до end включно, яке ділиться на divisor без остачі
+//     не використовуй оператор break
+
+//     Оголошена функція findNumber(start, end, divisor)
+//     Виклик findNumber(2, 6, 5) повертає 5
+//     Виклик findNumber(8, 17, 3) повертає 9
+//     Виклик findNumber(6, 9, 4) повертає 8
+//     Виклик findNumber(16, 35, 7) повертає 21
+//     Виклик findNumber() з випадковим набором чисел повертає правильний результат
+//     В циклі for не повинен використовуватися break для можливості виходу з циклу до завершення всіх ітерацій
+
+//     function findNumber(start, end, divisor) {
+//         for (let i =start; 1 <= end; i += 1) {
+//             if (i % divisor === 0) { 
+//               return i   
+//             }
+//         }
+//       }
+      
+// console.log(findNumber(2, 6, 5))
+// console.log(findNumber(8, 17, 3))
+// console.log(findNumber(6, 9, 4))
+// console.log(findNumber(16, 35, 7))
