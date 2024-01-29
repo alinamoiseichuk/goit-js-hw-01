@@ -382,22 +382,22 @@
 //     Виклик функції makeArray() з випадковими масивами і випадковим числом повертає правильний масив
 
 
-function  makeArray(firstArray, secondArray, maxLength) {
-    let newArray = firstArray.concat(secondArray);
-    if (newArray.length > maxLength) {
-      return newArray.slice(0, maxLength)
-    } else {
-        return newArray
-    }
-}
+// function  makeArray(firstArray, secondArray, maxLength) {
+//     let newArray = firstArray.concat(secondArray);
+//     if (newArray.length > maxLength) {
+//       return newArray.slice(0, maxLength)
+//     } else {
+//         return newArray
+//     }
+// }
 
 
-console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
-console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
-console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
 
 
 // Перш, ніж розв’язувати задачу, давай визначимося із новим терміном!
@@ -565,8 +565,38 @@ for (const planet of planets) {
         return total
     }
 
-    console.log(calculateTotalPrice([12, 85, 37, 4]))
-    console.log(calculateTotalPrice([164, 48, 291]))
-    console.log(calculateTotalPrice([412, 371, 94, 63, 176]))
+    // console.log(calculateTotalPrice([12, 85, 37, 4]))
+    // console.log(calculateTotalPrice([164, 48, 291]))
+    // console.log(calculateTotalPrice([412, 371, 94, 63, 176]))
+
+    // Напиши функцію filterArray(numbers, value), яка приймає масив чисел (numbers) та значення (value) як параметри. 
+    // Функція повинна повертати новий масив лише тих чисел із масиву numbers, які більші за значення value.
 
 
+    // Усередині функції:
+    
+    //     Створи порожній масив, у який будеш додавати підходящі числа.
+    //     Використай цикл для ітерації кожного елемента масиву numbers.
+    //     Використовуй умовний оператор if усередині циклу для перевірки кожного елемента и додавання до свого масиву.
+    //     Поверни свій новий масив з підходящими числами як результат.
+    
+    
+    // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. 
+    // У консоль будуть виведені результати її роботи.
+    
+
+
+   function filterArray(numbers, value) {
+     let newArray = [];
+     for (let i of numbers)
+     if (i > value) {
+        newArray.push(i)
+     }
+     return newArray
+    }
+
+    console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
+    console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
+    console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
+    console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
+    console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
